@@ -22,7 +22,7 @@ jobs:
               with:
                   fetch-depth: 0
             - name: Conventional Commits
-              uses: TriPSs/conventional-changelog-action@67139193614f5b9e8db87da1bd4240922b34d765 # v6.0.0
+              uses: TriPSs/conventional-changelog-action@84dadaf2c367cb52af02737cd9c7e888807219e7 # v6.2.0
               with:
                   github-token: ${{ secrets.github_token }}
                   skip-commit: "true"
@@ -43,7 +43,7 @@ jobs:
               with:
                   args: --version
             - name: goreleaser
-              uses: goreleaser/goreleaser-action@9c156ee8a17a598857849441385a2041ef570552 # v6.3.0
+              uses: goreleaser/goreleaser-action@e435ccd777264be153ace6237001ef4d979d3a7a # v6.4.0
               with:
                   distribution: goreleaser
                   version: latest
